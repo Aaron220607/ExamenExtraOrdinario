@@ -11,4 +11,7 @@ public Embarcacion(int id, String nombre, int precioBase) {
         return precioBase;
     }
     abstract double alquiler();
+    public String toString() {
+        return "Embarcacion [id=" + id + ", nombre=" + nombre + ", precioBase=" + precioBase + "]";
+    }
 }
