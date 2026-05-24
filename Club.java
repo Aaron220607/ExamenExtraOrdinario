@@ -1,4 +1,4 @@
-public class Club {
+public class Club implements IDatos{
     private String nombre;
     private Embarcacion[] embarcaciones;
     private  int nEmbarcaciones;

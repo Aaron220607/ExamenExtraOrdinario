@@ -1,4 +1,4 @@
-public class IDatos {
+public interface IDatos {
     int MAX_EMBARCACIONES = 30;
     double ALQUILER_MOTOS = 0.70;
     int MAX_RESERVAS = 20;
