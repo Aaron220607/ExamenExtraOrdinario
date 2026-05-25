@@ -7,14 +7,18 @@ public class Club implements IDatos{
         this.embarcaciones = new Embarcacion[IDatos.MAX_EMBARCACIONES];
         this.nEmbarcaciones=0;
     }
-    public void addEmbarcacion(Embarcacion e){
+    public String addEmbarcacion(Embarcacion e){
+        String mensaje = "";
         if(nEmbarcaciones<IDatos.MAX_EMBARCACIONES){
             embarcaciones[nEmbarcaciones]=e;
             nEmbarcaciones++;
+            mensaje = "Embarcacion agregada correctamente";
         } else {
-            System.out.println("No se pueden agregar mas embarcaciones");
+            mensaje = "No se pueden agregar mas embarcaciones";
         }
-    }
+        return mensaje;
+        }
+    
     public int getNEmbarcaciones() {
         return nEmbarcaciones;
     }
