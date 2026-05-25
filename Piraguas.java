@@ -1,8 +1,8 @@
 public class Piraguas extends Embarcacion {
     private int nOcupantes;
 
-    public Piraguas(int id, String nombre, int precioBase, int nOcupantes) {
-        super(id, nombre, precioBase);
+    public Piraguas(int id, String nombre, int nOcupantes) {
+        super(id, nombre);
         this.nOcupantes = nOcupantes;
         
     }

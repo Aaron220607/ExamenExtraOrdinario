@@ -1,12 +1,12 @@
 public class Reserva implements IDatos {
 private int reservas;
-Embarcacion[] embarcaciones;
-public Reserva() {
-    this.reservas = 0;
-    this.embarcaciones = new Embarcacion[IDatos.MAX_RESERVAS];
+Embarcacion embarcaciones;
+public Reserva(int reservas, Embarcacion embarcacion) {
+    this.reservas = reservas;
+    this.embarcaciones = embarcacion;
 }
 
 public String toString() {
-    return "Reserva [reservas=" + reservas + "]";
+    return "Reserva [reservas=" + reservas + "]" + "Total a pagar: " + embarcaciones.alquiler();
 }
 }

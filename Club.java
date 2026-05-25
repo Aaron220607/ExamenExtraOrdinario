@@ -22,4 +22,11 @@ public class Club implements IDatos{
     public int getNEmbarcaciones() {
         return nEmbarcaciones;
     }
+    public String mostrarInformacion(){
+        String cadena = "";
+        for(int i=0; i<nEmbarcaciones; i++){
+            cadena += embarcaciones[i].toString() + "\n";   
+    }
+        return cadena;
+    }
 }
