@@ -7,7 +7,7 @@ abstract class Trabajador implements ITaller {
     public String getNombre() {
         return nombre;
     }
-    public String ToString(){
+    public String toString(){
         return "Nombre del trabajador " + nombre;
     }
 }

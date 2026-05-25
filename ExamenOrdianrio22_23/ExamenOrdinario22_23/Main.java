@@ -7,9 +7,10 @@ public class Main {
         try{
             System.out.println(reparacion.repararPuerta(maletin));
             System.out.println(reparacion.repararVentana(maletin));
-            System.out.println(mantenimiento.reponerMaletin(maletin));
         } catch(TallerException e){
             System.out.println(e.getMessage());
+            System.out.println(mantenimiento.reponerMaletin(maletin));
+        }finally{
             System.out.println(mantenimiento.reponerMaletin(maletin));
         }
         mostrarInformacion(trabajadores);
