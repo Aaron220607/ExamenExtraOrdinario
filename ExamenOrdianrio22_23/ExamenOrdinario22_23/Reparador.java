@@ -25,8 +25,10 @@ private int piezasUsadas;
     public double calcularSalario(){
         return piezasUsadas * COBRO_REP;
     }
-    public String toString(){
-        return super.toString();
-    }
+    @Override
+public String toString(){
+    // Añadimos el texto "Rol: Reparador" para saber de quién es el salario
+    return super.toString() + " [Rol: Reparador - Piezas usadas: " + this.piezasUsadas + "]";
+}
     
 }

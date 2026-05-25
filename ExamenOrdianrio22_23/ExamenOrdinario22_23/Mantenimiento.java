@@ -7,15 +7,16 @@ public class Mantenimiento extends Trabajador{
     public String reponerMaletin(Maletin maletin){
         maletin.setTornillos(MAX_TORNILLOS);
         maletin.setClavos(MAX_CLAVOS);
-        this.reparaciones++;
-        return "Maletín repuesto por " + this.nombre;
+        reparaciones = reparaciones + 1; // Forzamos la suma explícita
+        return "Maletín repuesto por " + this.nombre + " (Contador interno: " + this.reparaciones + ")";
     }
     public double calcularSalario(){
         double salario = COBRO_MANT;
-        return salario*this.reparaciones;
+        return salario*reparaciones; // El salario se calcula multiplicando el número de reparaciones por el cobro fijo
     }
-    public String toString(){
-        return super.toString();
-    }
+   public String toString(){
+    // Añadimos el texto "Rol: Mantenimiento" para diferenciarlo en la referencia polimórfica
+    return super.toString() + " [Rol: Mantenimiento - Reposiciones: " + this.reparaciones + "]";
+}
     
 }

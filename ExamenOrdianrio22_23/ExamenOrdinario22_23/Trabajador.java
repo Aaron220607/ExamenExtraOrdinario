@@ -3,7 +3,7 @@ abstract class Trabajador implements ITaller {
     public Trabajador(String nombre){
         this.nombre = nombre;
     }
-    abstract double calcularSalario();
+    public abstract double calcularSalario();
     public String getNombre() {
         return nombre;
     }
