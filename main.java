@@ -8,7 +8,6 @@ public class main {
         do{
         try{
         Motos moto1 = new Motos(1, "Yamaha", 50, 10);
-        moto1.setCv(cvCorrecto);
         cvValido = true;
         club.addEmbarcacion(moto1);
         System.out.println("Embarcaciones en el club: " + club.getNEmbarcaciones());
